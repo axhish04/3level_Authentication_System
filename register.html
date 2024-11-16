@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Register Account</h1>
+    <form id="registerForm">
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" required><br>
+        
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" required><br>
+        
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" required><br>
+        
+        <label for="userPassword">Password:</label>
+        <input type="password" id="userPassword" required><br>
+        
+        <label for="colorPattern">Color Pattern (comma separated):</label>
+        <input type="text" id="colorPattern" required><br>
+        
+        <label for="securityQuestion">Security Question:</label>
+        <select id="securityQuestion">
+            <option value="hero">Who is your childhood hero?</option>
+            <option value="pet">What is your pet's name?</option>
+            <option value="car">What is your dream car?</option>
+            <option value="hobby">What is your favorite hobby?</option>
+            <option value="color">What is your favorite color?</option>
+        </select><br>
+        
+        <label for="securityAnswer">Answer:</label>
+        <input type="text" id="securityAnswer" required><br>
+        
+        <button type="submit">Register</button>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
